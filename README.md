@@ -53,7 +53,7 @@ The application follows a **three-tier architecture** with a component-based fro
                     ┌──────────────────┐
                     │      Auth0       │
                     │                  │
-                    │ Authentication  │
+                    │ Authentication   │
                     │ & Authorization  │
                     └──────────────────┘
 ```
@@ -91,9 +91,7 @@ Contains the core business logic of the application and coordinates the required
 
 #### Persistence Layer
 
-Handles communication with MongoDB and is responsible for storing and retrieving application data.
-
-Keeping these responsibilities separate makes the backend easier to understand, test, maintain, and extend.
+Handles communication with MongoDB and is responsible for storing and retrieving application data. Keeping these responsibilities separate makes the backend easier to understand, test, maintain, and extend.
 
 ---
 
@@ -105,17 +103,13 @@ MongoDB is used as the application's **NoSQL database** for storing application-
 
 ### Google Drive
 
-Video files and thumbnail images are stored remotely using **Google Drive** rather than directly on the application server.
-
-This keeps large media files separate from the application and database, allowing the backend to focus primarily on application logic and data management.
+Video files and thumbnail images are stored remotely using **Google Drive** rather than directly on the application server. This keeps large media files separate from the application and database, allowing the backend to focus primarily on application logic and data management.
 
 ---
 
 ## 🔐 Authentication & Authorization
 
-**Auth0** is used to handle authentication and authorization.
-
-This allows the application to securely manage user identity and access without implementing the complete authentication infrastructure within the application itself.
+**Auth0** is used to handle authentication and authorization. This allows the application to securely manage user identity and access without implementing the complete authentication infrastructure within the application itself.
 
 ---
 
