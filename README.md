@@ -76,7 +76,6 @@ The first major feature is **video uploading**. The upload follows the layered b
           ▼
 ┌────────────────────┐
 │     Service        │
-│                    │
 │ Processes upload   │
 │ and handles logic  │
 └─────────┬──────────┘
@@ -84,7 +83,6 @@ The first major feature is **video uploading**. The upload follows the layered b
           ▼                Video File
 ┌────────────────────┐
 │    Repository      │
-│                    │
 │ Stores video       │
 │ metadata           │
 └─────────┬──────────┘
